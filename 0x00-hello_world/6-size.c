@@ -4,12 +4,16 @@
  * main - Entry point
  *
  * Description: 'the program's description'
- * @parameter: describe the parameter
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
+char a;
+int b;
+long int c;
+long long int d;
+float f;
 printf("size of a", sizeof(char));
 printf("size of b", sizeof(int));
 printf("size of c", sizeof(long int));
