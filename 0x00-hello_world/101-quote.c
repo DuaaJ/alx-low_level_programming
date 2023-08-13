@@ -1,11 +1,15 @@
-#include <stdio.h>
 #include <unistd.h>
+
 /**
- * main - A c program
- * Return 1 (success)
+ * main - print
+ * Return: Always (sucess)
  */
+
 int main(void)
 {
-	fput("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
+	char st[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+
+	write(1, st, 56);
+
 	return (1);
 }
