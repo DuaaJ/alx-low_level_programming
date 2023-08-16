@@ -43,7 +43,7 @@ int main(void)
 		while (f1o > 0 && st > 0)
 		{
 			printf("%d", 0);
-			st++;
+			st--;
 		}
 		printf("%lu", fib1);
 
