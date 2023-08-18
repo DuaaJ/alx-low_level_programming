@@ -15,23 +15,23 @@ int main(void)
 		if (num % 3 == 0 && num % 5 == 0)
 		{
 			printf("FizzBuzz");
-			printf(" ");
 		}
 		else if (num % 3 == 0)
 		{
 			printf("Fizz");
-			printf(" ");
 		}
 		else if (num % 5 == 0)
 		{
 			printf("Buzz");
-			printf(" ");
 		}
 		else
 		{
-			printf("%d ", num);
-			printf(" ");
+			printf("%d", num);
 		}
+		if (num != 100)
+			printf(" ");
+		else
+			printf("\n");
 	}
 	return (0);
 }
