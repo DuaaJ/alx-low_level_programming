@@ -17,10 +17,13 @@ void more_numbers(void)
 		{
 			c = num;
 			if (num > 9)
+			{
 			_putchar(1 + 48);
 			c = num % 10;
-		}
+			}
+
 		_putchar(c + 48);
-	}
+		}
 	_putchar('\n');
+	}
 }
