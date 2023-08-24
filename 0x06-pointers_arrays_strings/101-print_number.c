@@ -12,6 +12,8 @@ void print_number(int n)
 {
 	unsigned  int nu;
 
+	nu = n;
+
 	if (nu < 0)
 	{
 		_putchar('-');
