@@ -6,6 +6,7 @@
  * print_number - prints an integer
  *
  * @n: number
+ * Return:success
  */
 
 void print_number(int n)
