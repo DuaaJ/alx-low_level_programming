@@ -17,7 +17,7 @@ char *leet(char *st)
 	int num[] = {'4', '3', '0', '7', '1'};
 	unsigned int i;
 
-	while (st)
+	while (*st)
 	{
 		for (i = 0; i < sizeof(lett) / sizeof(char); i++)
 		{
