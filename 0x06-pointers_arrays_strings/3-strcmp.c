@@ -23,9 +23,6 @@ int _strcmp(char *s1, char *s2)
 		}
 		break;
 	}
-	if (value == 1)
-		return (1);
-	else
-		return (0);
+	return (value);
 }
 
