@@ -19,7 +19,7 @@ char *rot13(char *st)
 
 		while (*st)
 		{
-			for (i = 0; i < 52; i++)
+			for (i = 0; i <= 52; i++)
 			{
 				if (*st == root[i])
 				{
