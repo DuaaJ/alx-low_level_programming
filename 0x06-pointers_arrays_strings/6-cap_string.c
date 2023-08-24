@@ -13,16 +13,13 @@
 char *cap_string(char *st)
 {
 
-	int i;
+	int i = 0;
 	char ch;
 
 	while (st[i])
-	{
-		if (st[i] >= 97 && st[i] <= 122)
-		{
-			ch = st[i];
+	{	
+		ch = st[i];
 			_putchar(toupper(ch));
-		}
 		i++;
 	}
 	return (st);
