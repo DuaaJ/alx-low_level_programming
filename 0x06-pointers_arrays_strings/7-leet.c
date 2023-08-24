@@ -12,6 +12,7 @@
 
 char *leet(char *st)
 {
+	char *s = st;
 	char lett[] = {'A', 'E', 'O', 'T', 'L'};
 	int num[] = {'4', '3', '0', '7', '1'};
 	unsigned int i;
@@ -27,5 +28,5 @@ char *leet(char *st)
 		}
 		st++;
 	}
-	return (st);
+	return (s);
 }
