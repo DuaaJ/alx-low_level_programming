@@ -10,10 +10,8 @@
 int sq(int n, int r);
 int _sqrt_recursion(int n)
 {
-	if (n < n)
-		return (-1);
 
-	return (sq(n, 0));
+	return (sq(n, 1));
 }
 
 /**
@@ -28,9 +26,9 @@ int sq(int n, int r)
 {
 	if (r * r == n)
 		return (r);
-	else if (r * r > n)
-		return (-1);
-	else
+	else if (r * r < n)
 		return (sq(n, r + 1));
+	else
+		return (-1);
 }
 
