@@ -3,12 +3,12 @@
 #include <string.h>
 
 /**
- * length - find length of string
+ * _length - find length of string
  * @s: the string
  * Return: the length
  */
 
-int length(char *s)
+int _length(char *s)
 {
 	int i;
 
@@ -30,12 +30,12 @@ char *str_concat(char *s1, char *s2)
 	char *ptr;
 
 	if (s1 == NULL)
-		s1 = '\0';
+		s1 = "\0";
 	if (s2 == NULL)
-		s2 = '\0';
+		s2 = "\0";
 
-	int len1 = length(s1);
-	int len2 = length(s2);
+	int len1 = _length(s1);
+	int len2 = _length(s2);
 
 	ptr = malloc((len1 + len2) * sizeof(char) + 1);
 
