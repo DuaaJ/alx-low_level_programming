@@ -27,16 +27,16 @@ int _strlen(char *s)
 
 char *argstostr(int ac, char **av)
 {
-	int i, j, i1, j1;
+	int i, j, i1 = 0, j1;
 	char *ptr;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	for (i = 0, i1 = 0; i < ac; i++, i1++)
+	for (i = 0; i < ac; i++, i1++)
 		i1 += _strlen(av[i]);
 
-	ptr = malloc(i1 * sizeof(char) + 1);
+	ptr = malloc(sizeof(char) * i1 + 1);
 
 	if (ptr == 0)
 		return (NULL);
