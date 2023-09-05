@@ -3,6 +3,22 @@
 #include <string.h>
 
 /**
+ * _strlen - the function didnot work
+ * @s:the string
+ * Return:integer lenghth
+ */
+
+int _strlen(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+		;
+	return (i);
+}
+
+
+/**
  * *argstostr - concatenates all the arguments
  * @ac: an integer
  * @av: the arguments
@@ -18,7 +34,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 
 	for (i = 0, i1 = 0; i < ac; i++, i1++)
-		i1 += strlen(av[i]);
+		i1 += _strlen(av[i]);
 
 	ptr = malloc(i1 * sizeof(char) + 1);
 
