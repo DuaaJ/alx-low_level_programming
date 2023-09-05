@@ -21,24 +21,25 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = '\0';
 
-	strcat(s1, s1);
-	int size = strlen(s1);
+	int len1 = strlen(s1);
+	int len2 = strlen(s2);
 
-	for (int i = 0; i < size; i++)
+	ptr = malloc((len1 + len2) * sizeof(char) + 1);
+
+	if (ptr == 0)
+		return (0);
+
+	int s = len1 + len2 + 1;
+
+	for (int i = 0; i <= s; i++)
 	{
-		ptr = malloc(i * sizeof(s1));
+		if (i < len1)
+			ptr[i] = s1[i];
+		else if (i == s)
+			ptr[i] = '\0';
+		else
+			ptr[i] = s2[i - len2];
 	}
-	if (ptr == NULL)
-	{
-		return (NULL);
-	}
-	else
-	{
-		for (int j = 0; j < size; j++)
-		{
-			ptr[j] = s1[j];
-		}
-		return (ptr);
-	}
+	return (ptr);
 }
 
