@@ -29,17 +29,17 @@ char *str_concat(char *s1, char *s2)
 	if (ptr == 0)
 		return (0);
 
-	int s = len1 + len2 + 1;
+	int s = len1 + len2;
+	int i;
 
-	for (int i = 0; i <= s; i++)
+	for (i = 0; i <= s; i++)
 	{
 		if (i < len1)
 			ptr[i] = s1[i];
-		else if (i == s)
-			ptr[i] = '\0';
 		else
 			ptr[i] = s2[i - len2];
 	}
+	ptr[i] = '\0';
 	return (ptr);
 }
 
