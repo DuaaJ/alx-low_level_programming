@@ -8,6 +8,7 @@
  * Return:integer lenghth
  */
 
+int _strlen(char *s);
 int _strlen(char *s)
 {
 	int i;
@@ -25,7 +26,6 @@ int _strlen(char *s)
  * Return:pointer to a new string, or NULL
  */
 
-int _strlen(char *s);
 
 char *argstostr(int ac, char **av)
 {
