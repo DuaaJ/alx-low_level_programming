@@ -28,6 +28,7 @@ int _length(char *s)
 char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
+	int i;
 
 	if (s1 == NULL)
 		s1 = "\0";
@@ -42,7 +43,6 @@ char *str_concat(char *s1, char *s2)
 	if (ptr == 0)
 		return (0);
 
-	int i;
 
 	for (i = 0; i <= (len1 + len2); i++)
 	{
