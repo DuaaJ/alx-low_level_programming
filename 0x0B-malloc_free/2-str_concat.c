@@ -42,10 +42,9 @@ char *str_concat(char *s1, char *s2)
 	if (ptr == 0)
 		return (0);
 
-	int s = len1 + len2;
 	int i;
 
-	for (i = 0; i <= s; i++)
+	for (i = 0; i <= (len1 + len2); i++)
 	{
 		if (i < len1)
 			ptr[i] = s1[i];
