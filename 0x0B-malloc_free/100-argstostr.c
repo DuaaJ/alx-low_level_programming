@@ -25,6 +25,8 @@ int _strlen(char *s)
  * Return:pointer to a new string, or NULL
  */
 
+int _strlen(char *s);
+
 char *argstostr(int ac, char **av)
 {
 	int i, j, i1 = 0, j1;
