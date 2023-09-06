@@ -10,7 +10,7 @@
 char *_strdup(char *str)
 {
 	char *ptr;
-	int i = 0;
+	int i = 0, j;
 
 	if (str == NULL)
 		return (NULL);
@@ -20,11 +20,11 @@ char *_strdup(char *str)
 
 	if (str == 0)
 	{
-		return (NULL);
+	return (NULL);
 	}
 	else
 	{
-		for (int j = 0; j < i; j++)
+		for (j = 0; j < i; j++)
 			ptr[j] = str[j];
 	}
 		return (ptr);
