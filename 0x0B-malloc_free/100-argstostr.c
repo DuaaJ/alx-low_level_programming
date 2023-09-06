@@ -8,7 +8,6 @@
  * Return:integer lenghth
  */
 
-int _strlen(char *s);
 int _strlen(char *s)
 {
 	int i;
