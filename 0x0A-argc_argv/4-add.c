@@ -4,7 +4,7 @@
 /**
  * main -  adds positive numbers
  * @argc:number
- * @argc:array
+ * @argv:array
  * Return: 0
  */
 
