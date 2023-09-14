@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 	ptr = get_op_func(argv[2]);
 	if (!ptr)
 		printf("Error\n"), exit(98);
-	if (!b && (argv[2][0] == '/' || argv[2][0] == '*'))
+	if (!b && (argv[2][0] == '/' || argv[2][0] == '%'))
 		printf("Error\n"), exit(100);
 	printf("%d\n", ptr(a, b));
 	return (0);
