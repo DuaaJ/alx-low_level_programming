@@ -9,13 +9,13 @@
 
 void f_s(char *separator, va_list l)
 {
-	char *s= va_arg(l, char *);
+	char *si = va_arg(l, char *);
 
-	switch ((int)(!s))
-		case 1: 
-			s = "(nil)";
+	switch ((int)(!si))
+		case 1:
+			si = "(nil)";
 
-		printf("%s%s", separator, s);
+		printf("%s%s", separator, si);
 }
 
 /**
@@ -37,7 +37,7 @@ void f_f(char *separator, va_list l)
 
 void f_char(char *separator, va_list l)
 {
-        printf("%s%c", separator, va_arg(l, int));
+	printf("%s%c", separator, va_arg(l, int));
 }
 
 /**
@@ -48,7 +48,7 @@ void f_char(char *separator, va_list l)
 
 void f_int(char *separator, va_list l)
 {
-        printf("%s%d", separator, va_arg(l, int));
+	printf("%s%d", separator, va_arg(l, int));
 }
 /**
  * print_all - print
@@ -59,7 +59,7 @@ void f_int(char *separator, va_list l)
 void print_all(const char * const format, ...)
 {
 	int i, j;
-	char separator = "";
+	char *separator = "";
 	va_list l;
 
 	fun_t func[] = {
