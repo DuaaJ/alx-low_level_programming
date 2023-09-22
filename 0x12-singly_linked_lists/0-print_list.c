@@ -7,6 +7,7 @@
 /**
  * _strlen - the length
  * @st:string
+ *
  * Return:the length
  */
 
@@ -25,6 +26,7 @@ int _strlen(char *st)
 /**
  * print_list - print contain of list
  * @h:head of linked list
+ *
  * Return:number of nodes
  */
 
