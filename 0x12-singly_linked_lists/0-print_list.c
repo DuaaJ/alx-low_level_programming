@@ -32,7 +32,7 @@ size_t print_list(const list_t *h)
 {
 	size_t coun = 0;
 
-	while (h != NULL)
+	while (h)
 	{
 		if (h->str == NULL)
 			printf("[%d] %s\n", _strlen(h->str), "(nil)");
