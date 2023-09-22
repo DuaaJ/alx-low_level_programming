@@ -4,24 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/**
- * _strlen - the length
- * @st:string
- *
- * Return:the length
- */
-
-int _strlen(char *st)
-{
-	int n = 0;
-
-	if (!st)
-		return (0);
-	while (*st++)
-		n++;
-	return (n);
-}
-
 
 /**
  * print_list - print contain of list
@@ -36,12 +18,12 @@ size_t print_list(const list_t *h)
 
 	while (h)
 	{
-		if (h->str == NULL)
-			printf("[%d] %s\n", _strlen(h->str), "(nil)");
+		if (h->str)
+			printf("[%ld] %s\n", strlen(h->str), "(nil)");
 		else
-			 printf("[%d] %s\n", _strlen(h->str), h->str);
-		coun++;
+			 printf("[%ld] %s\n", strlen(h->str), h->str);
 		h = h->next;
+		coun++;
 	}
 	return (coun);
 }
