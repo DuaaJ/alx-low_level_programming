@@ -4,6 +4,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * _strlen:find length of the string in linked
+ * @st:the string
+ *
+ * Return:integer
+ */
+
+int _strlen(char *st)
+{
+	int n = 0;
+
+	if (!st)
+		return (0);
+	while (*st++)
+	{
+		n++;
+	}
+	return (n);
+}
 
 /**
  * print_list - print contain of list
@@ -19,10 +38,10 @@ size_t print_list(const list_t *h)
 	while (h)
 	{
 		if (h->str == NULL)
-			printf("[%ld] %s\n", strlen(h->str), "(nil)");
+			printf("[%d] %s\n", _strlen(h->str), "(nil)");
 		else
-			 printf("[%ld] %s\n", strlen(h->str), h->str);
-		count++;
+			 printf("[%d] %s\n", _strlen(h->str), h->str);
+		coun++;
 		h = h->next;
 	}
 	return (coun);
